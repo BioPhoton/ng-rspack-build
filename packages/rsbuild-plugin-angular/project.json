@@ -1,0 +1,16 @@
+{
+  "name": "rsbuild-plugin-angular",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/rsbuild-plugin-angular/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "unit-test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "config": "packages/rsbuild-plugin-angular/vite.config.unit.test.ts"
+      }
+    }
+  }
+}

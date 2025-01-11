@@ -20,5 +20,13 @@
     "src/**/*.spec.js",
     "src/**/*.test.jsx",
     "src/**/*.spec.jsx"
+  ],
+  "references": [
+    {
+      "path": "../../../../testing/utils/tsconfig.lib.json"
+    },
+    {
+      "path": "../../../../packages/rsbuild-plugin-angular/tsconfig.lib.json"
+    }
   ]
 }

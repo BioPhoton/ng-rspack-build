@@ -13,6 +13,12 @@
   "include": [],
   "references": [
     {
+      "path": "../../testing/utils"
+    },
+    {
+      "path": "../../packages/rsbuild-plugin-angular"
+    },
+    {
       "path": "./tsconfig.editor.json"
     },
     {

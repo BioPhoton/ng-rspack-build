@@ -93,6 +93,7 @@ export function createConfig(
               source: {
                 preEntry: [...serverPolyfills],
                 entry: {
+                  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
                   server: normalizedOptions.ssrEntry!,
                 },
                 define: {

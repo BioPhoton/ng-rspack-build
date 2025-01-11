@@ -2,6 +2,7 @@ import { APP_BASE_HREF } from '@angular/common';
 import { CommonEngine } from '@angular/ssr/node';
 import express from 'express';
 import { dirname, join, resolve } from 'node:path';
+import { ApplicationRef, Type } from '@angular/core';
 
 interface RsbuildAngularServer {
   app: express.Express;
@@ -16,7 +17,7 @@ export interface RsbuildAngularServerOptions {
 }
 
 export function createServer(
-  bootstrap: any,
+  bootstrap: Type<object> | (() => Promise<ApplicationRef>),
   opts?: RsbuildAngularServerOptions
 ): RsbuildAngularServer {
   const serverDistFolder = opts?.serverDistFolder ?? dirname(__filename);

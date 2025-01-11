@@ -2,7 +2,7 @@ import type { RsbuildPlugin } from '@rsbuild/core';
 import { compileString } from 'sass-embedded';
 
 export const pluginAngularJit = (
-  options: { inlineStylesExtension?: 'css' | 'scss' | 'sass' | 'less' } = {
+  _: { inlineStylesExtension?: 'css' | 'scss' | 'sass' | 'less' } = {
     inlineStylesExtension: 'css',
   }
 ): RsbuildPlugin => ({

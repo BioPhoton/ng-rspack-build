@@ -88,7 +88,7 @@ export async function buildAndAnalyze(
     builder = ts.createAbstractBuilder(typeScriptProgram, host);
   }
 
-  const getTypeChecker = () => builder.getProgram().getTypeChecker();
+  // const getTypeChecker = () => builder.getProgram().getTypeChecker();
   const fileEmitter = createFileEmitter(
     builder,
     mergeTransformers({}, angularCompiler!.prepareEmit().transformers),
