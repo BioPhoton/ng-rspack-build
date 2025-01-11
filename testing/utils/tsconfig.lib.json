@@ -6,23 +6,10 @@
     "outDir": "dist",
     "tsBuildInfoFile": "dist/tsconfig.lib.tsbuildinfo",
     "emitDeclarationOnly": false,
-    "types": ["node"],
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "noImplicitAny": false,
-    "noUnusedLocals": false,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "paths": {
-      "testing-utils": ["../../testing/utils/src"]
-    }
+    "types": ["node", "vite/client"]
   },
-  "include": ["src/**/*.ts", "src/lib/patch/patch-angular-build.ts"],
-  "references": [
-    {
-      "path": "../../testing/utils/tsconfig.lib.json"
-    }
-  ],
+  "include": ["src/**/*.ts"],
+  "references": [],
   "exclude": [
     "vite.config.ts",
     "vite.config.mts",

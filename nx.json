@@ -96,7 +96,7 @@
     },
     {
       "plugin": "@nx/js/typescript",
-      "include": ["packages/**"],
+      "include": ["packages/**", "testing/utils/*"],
       "options": {
         "typecheck": {
           "targetName": "typecheck"
@@ -108,13 +108,14 @@
       }
     },
     {
-      "plugin": "@nx/rsbuild",
+      "plugin": "@nx/vite/plugin",
       "options": {
         "buildTargetName": "build",
-        "devTargetName": "dev",
+        "testTargetName": "vite:test",
+        "serveTargetName": "serve",
         "previewTargetName": "preview",
-        "inspectTargetName": "inspect",
-        "typecheckTargetName": "typecheck"
+        "serveStaticTargetName": "serve-static",
+        "typecheckTargetName": "vite:typecheck"
       }
     }
   ],

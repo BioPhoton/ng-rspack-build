@@ -4,13 +4,10 @@
   "include": [],
   "references": [
     {
-      "path": "../../testing/utils"
-    },
-    {
       "path": "./tsconfig.lib.json"
     },
     {
-      "path": "./tsconfig.test.json"
+      "path": "./tsconfig.spec.json"
     }
   ]
 }

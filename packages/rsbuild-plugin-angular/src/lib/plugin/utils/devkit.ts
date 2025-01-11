@@ -30,11 +30,11 @@ import * as sfc from './source-file-cache.js';
 const angularMajor = Number(VERSION.major);
 const angularMinor = Number(VERSION.minor);
 const angularPatch = Number(VERSION.patch);
-let sourceFileCache: any;
+let sourceFileCache;
 
 // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
 let cjt: Function;
-let jt: any;
+let jt;
 
 if (angularMajor < 15) {
   throw new Error('AnalogJS is not compatible with Angular v14 and lower');
