@@ -2,7 +2,7 @@ import { APP_BASE_HREF } from '@angular/common';
 import { CommonEngine } from '@angular/ssr/node';
 import express from 'express';
 import { dirname, join, resolve } from 'node:path';
-import { ApplicationRef, Type } from '@angular/core';
+import type { ApplicationRef, Type } from '@angular/core';
 
 interface RsbuildAngularServer {
   app: express.Express;
